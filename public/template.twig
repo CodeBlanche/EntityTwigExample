@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>{{ page.title }}</title>
+</head>
+<body id="{{ page.bodyId }}">
+
+{{ page.menu|raw }}
+
+<ul>
+    {% for item in page.menu %}
+        <li><a href="{{ item.href }}">{{ item.name }}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

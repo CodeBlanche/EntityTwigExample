@@ -1,0 +1,30 @@
+{
+    "name"              : "",
+    "description"       : "",
+    "authors"           : [
+        {
+            "name"  : "Merten van Gerven",
+            "email" : "merten@codeblanche.com"
+        }
+    ],
+    "minimum-stability" : "dev",
+    "license"           : "BSD-3-Clause",
+    "keywords"          : [
+    ],
+    "require-dev"       : {
+        "phpunit/phpunit" : "3.7.*"
+    },
+    "require"           : {
+        "php"                : ">=5.3.3",
+        "codeblanche/entity" : "dev-master",
+        "twig/twig"          : "1.15.*@dev"
+    },
+    "autoload"          : {
+        "classmap" : ["./"],
+        "psr-0"    : {
+            "EntityTwigExample" : "src/application/",
+            ""                  : "src/modules/"
+        }
+    }
+}
+
